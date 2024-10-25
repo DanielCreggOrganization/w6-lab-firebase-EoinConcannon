@@ -69,7 +69,9 @@ export class AuthService {
    * @param userEmail - The email address for password reset
    * @returns Promise resolving when email is sent
    */
-
+  async initiatePasswordReset(userEmail: string): Promise<void> {
+    return sendPasswordResetEmail(this.firebaseAuth, userEmail);
+  }
 
   /**
    * Signs out the current user

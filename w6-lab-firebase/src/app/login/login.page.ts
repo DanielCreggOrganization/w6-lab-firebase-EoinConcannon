@@ -62,7 +62,9 @@ export class LoginPage {
   }
 
   async handlePasswordReset() {
-
-
+ const email = this.userAuthForm.controls.email.value;
+    if (email) {
+      await this.auth.initiatePasswordReset(email);
+    }
   }
 }
