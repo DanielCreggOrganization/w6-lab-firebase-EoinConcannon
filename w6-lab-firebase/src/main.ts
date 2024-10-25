@@ -16,14 +16,15 @@ bootstrapApplication(AppComponent, {
     provideIonicAngular(),
     provideRouter(routes, withPreloading(PreloadAllModules)),
     provideFirebaseApp(() => initializeApp({
-      projectId: "fir-ionic-project-dc52e",
-      appId: "1:769063483414:web:0b402d09efd31d324dca57",
-      storageBucket: "fir-ionic-project-dc52e.appspot.com",
-      apiKey: "AIzaSyDibzo0p2mUnQmjN6RlfXlHjbgkzSIUjFY",
-      authDomain: "fir-ionic-project-dc52e.firebaseapp.com",
-      messagingSenderId: "769063383314"
+      apiKey: "AIzaSyAmfKvc7vgHdaLGvBulP_CDk3wxTQi5Ub4",
+      authDomain: "fir-ionic-project-c3859.firebaseapp.com",
+      projectId: "fir-ionic-project-c3859",
+      storageBucket: "fir-ionic-project-c3859.appspot.com",
+      messagingSenderId: "666798681810",
+      appId: "1:666798681810:web:ef5e5be2b6458ba776070b"
     })),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({"projectId":"fir-ionic-project-c3859","appId":"1:666798681810:web:ef5e5be2b6458ba776070b","storageBucket":"fir-ionic-project-c3859.appspot.com","apiKey":"AIzaSyAmfKvc7vgHdaLGvBulP_CDk3wxTQi5Ub4","authDomain":"fir-ionic-project-c3859.firebaseapp.com","messagingSenderId":"666798681810"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()),
+    provideFirestore(() => getFirestore()),
+    //make sure theres no extra stuff here
   ],
 });
